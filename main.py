@@ -32,6 +32,8 @@ def list_entity(entity):
     return call(f"{BASE_URL}{entity}/").get("results")
 
 
+st.header("API do Star Wars!")
+
 planets = list_entity("planets")
 
 for idx, planet in enumerate(planets):
