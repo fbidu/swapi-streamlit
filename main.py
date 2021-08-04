@@ -37,7 +37,7 @@ st.header("API do Star Wars!")
 planets = list_entity("planets")
 
 for idx, planet in enumerate(planets):
-    st.header(planet["name"])
+    st.header("🪐", planet["name"])
 
     if st.button("Ver população cadastrada", key=idx):
         planet = call(planets[idx]["url"])
